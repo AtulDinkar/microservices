@@ -1,0 +1,22 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: ConfigServer
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/AtulDinkar/spring-app-config
+          clone-on-start: true
+
+#eureka:
+#  instances:
+#    prefer-ip-address: true
+#  client:
+#    fetch-registry: true
+#    registry-with-eureka: true
+#    service-url:
+#      defaultZone: ${EUREKA_SERVER_ADDRESS:http://localhost:9090/eureka}
+
